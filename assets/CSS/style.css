@@ -1,1 +1,17 @@
-/*CSS*/
+/*CSS
+
+---Color Palette: 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
