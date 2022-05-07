@@ -1,6 +1,6 @@
 /*CSS
 
----Color Palette: 
+---Color Palette:
 
 */
 
@@ -9,9 +9,24 @@
     padding: 0;
 }
 
+html {
+    
+}
+
 body {
     position: relative;
     height: 100vh;
     font-family: sans-serif;
     overflow: hidden;
+    background-color: black;
+}
+
+#my-name {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
