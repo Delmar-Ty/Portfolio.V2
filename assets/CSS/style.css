@@ -57,25 +57,36 @@ body {
     align-items: center;
     transition: all;
     transition-duration: 500ms;
+    overflow: visible;
+}
+
+.nav-item::before {
+    content: '';
+    width: 350%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    right: -375%;
+    z-index: 1;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    display: none;
 }
 
 .nav-item::after {
-    width: 0%;
+    width: 350%;
     height: 100%;
-    background-color: white;
-    color: black;
+    color: white;
     position: absolute;
-    left: 100%;
-    overflow: hidden;
+    left: 125%;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
     font-size: 2rem;
-    border-radius: 20px;
-    opacity: 0;
+    display: none;
+    z-index: 0;
 }
 
 .nav-item:nth-of-type(1):after {
@@ -96,10 +107,28 @@ body {
     transition-duration: 500ms;
 }
 
+.nav-item:hover::before {
+    display: initial;
+    animation-name: reveal;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+}
+
+@keyframes reveal {
+    0% {
+        width: 350%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
 .nav-item:hover::after {
-    width: 350%;
-    left: 150%;
-    opacity: 1;
+    display: flex;
 }
 
 .nav-item:hover > i{
