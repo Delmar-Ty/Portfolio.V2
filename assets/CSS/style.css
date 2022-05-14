@@ -77,6 +77,8 @@ body {
     transition-duration: 500ms;
     transition-timing-function: ease-out;
     display: none;
+    border-left-color: white;
+    border-left-width: 1px;
 }
 
 .nav-item::after {
@@ -117,17 +119,19 @@ body {
     animation-duration: 500ms;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
-    border-left-style: solid;
-    border-left-color: white;
-    border-left-width: 1px;
 }
 
 @keyframes reveal {
     0% {
         width: 350%;
+        border-left-style: solid;
+    }
+    75% {
+        border-left-style: solid;
     }
     100% {
         width: 0%;
+        border-style: none;
     }
 }
 
@@ -224,6 +228,31 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding: 3%;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+}
+
+
+.form-submit:hover {
+    transform: translateX(-50%) scale(1.1);  
+}
+
+.form-submit::after {
+    content: '';
+    position: absolute;
+    left: -150%;
+    width: 200%;
+    height: 25%;
+    background-color: white;
+    transform: rotateZ(45deg);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.form-submit:hover::after {
+    left: 100%;
 }
 
 .form {
@@ -235,15 +264,23 @@ body {
     justify-content: space-around;
     align-items: baseline;
     margin-left: 20%;
+    color: white;
 }
 
 .form-input {
+    position: relative;
     background-color: transparent;
     border-style: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-color: white;   
+    color: white;
+    padding: 2%;
 }
+
+.form-input:focus {
+    outline: none;
+}   
 
 #message {
     background-color: transparent;
@@ -252,4 +289,60 @@ body {
     border-color: white;
     color: white;
     padding: 3%;
+    resize: none;
+}
+
+#message:focus::placeholder {
+    position: relative;
+    animation-name: textBox;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+}
+
+@keyframes textBox {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#message:focus {
+    outline: none;
+}
+
+.name-placeholder, .email-placeholder {
+    position: absolute;
+    font-size: 0.9vw;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.name-placeholder::after, .email-placeholder::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.name-placeholder {
+    top: 9.8%;
+    left: 2%;
+}
+
+.email-placeholder {
+    top: 33.6%;
+    left: 2%;
+}
+
+.form-input:focus + div::after {
+    width: 100%;
 }
