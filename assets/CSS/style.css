@@ -21,7 +21,7 @@ body {
 }
 
 .home-page {
-    display: none;
+    display: block;
 }
 
 .my-name {
@@ -63,6 +63,7 @@ body {
     transition: all;
     transition-duration: 500ms;
     overflow: visible;
+    cursor: pointer;
 }
 
 .nav-item::before {
@@ -180,8 +181,29 @@ body {
     left: 2%;
     font-size: 2vw;
     color: white;
-    overflow: hidden;
     text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.home-button::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.home-button:hover::after {
+    width: 100%;
+}
+
+.contact-me {
     display: none;
 }
 
@@ -193,16 +215,16 @@ body {
     width: 60%;
     height: 60%;
     display: flex;
+    justify-content: space-around;
 }
 
 .form-title {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-style: solid;
     border-color: white;
     border-width: 2px;
-    border-right-style: none;
 }
 
 .form-text {
@@ -232,6 +254,7 @@ body {
     transition-duration: 500ms;
     transition-timing-function: ease-out;
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -257,14 +280,19 @@ body {
 
 .form {
     position: relative;
-    width: 50%;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    color: white;
+}
+
+.form-box {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: baseline;
-    margin-left: 20%;
-    color: white;
+    align-items: flex-start;
 }
 
 .form-input {
@@ -276,6 +304,7 @@ body {
     border-color: white;   
     color: white;
     padding: 2%;
+    font-size: 0.9vw;
 }
 
 .form-input:focus {
@@ -339,10 +368,18 @@ body {
 }
 
 .email-placeholder {
-    top: 33.6%;
+    top: 35%;
     left: 2%;
 }
 
 .form-input:focus + div::after {
     width: 100%;
+}
+
+.about-me {
+    display: none;
+}
+
+.my-work {
+    display: none;
 }
