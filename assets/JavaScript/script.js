@@ -1,6 +1,11 @@
 const wipeDiv = document.querySelector('.wipe');
 const formInputs = document.querySelectorAll('.form-input');
 const homeButton = document.querySelector('.home-button');
+const toggleButton = {
+    button: document.querySelector('.arrow-button'),
+    toggled: false,
+    default: document.querySelector('.arrow-button').className
+}
 
 //Creates a way to easily access all the navigation buttons and for convenience has the same names as the page variable
 const navMenu = {
@@ -16,7 +21,31 @@ const page = {
     workPage: document.querySelector('.my-work'),
     contactPage: document.querySelector('.contact-me')
 }
-let currentPage = 'homePage';
+
+let currentPage;
+
+if (sessionStorage.getItem('currentPage') === null || sessionStorage.getItem('currentPage') === undefined) {
+    sessionStorage.setItem('currentPage', 'homePage');
+    page.homePage.style.display = 'block';
+    page.aboutPage.style.display = 'none';
+    page.workPage.style.display = 'none';
+    page.contactPage.style.display = 'none';
+    homeButton.style.display = 'none';
+    currentPage = sessionStorage.getItem('currentPage');
+} else {
+    currentPage = sessionStorage.getItem('currentPage');
+    page[currentPage].style.display = 'block';
+    if (currentPage !== 'homePage') {
+        homeButton.style.display = 'block';
+    } else {
+        homeButton.style.display = 'none';
+    }
+    for (const thing in page) {
+        if (thing !== currentPage) {
+            page[thing].style.display = 'none';
+        }
+    }
+}
 
 //Triggers the animation used to mask the changing of
 function wipe() {
@@ -47,7 +76,6 @@ formInputs.forEach(function(el) {
 //'element' is the target element aka the navigation button clicked which can either be the 'homeButton' or one of the property names in the 'page' variable
 //'current' is the current page that has one of the property names in the 'page' variable
 function navigate(element, current) {
-    console.log(element, current);
         if (element === 'homeButton') {
             wipe();
             setTimeout(function() {
@@ -55,6 +83,7 @@ function navigate(element, current) {
                 page.homePage.style.display = 'block';
                 homeButton.style.display = 'none';
                 currentPage = 'homePage';
+                sessionStorage.setItem('currentPage', currentPage);
             }, 1500);
         } else {
             wipe();
@@ -63,6 +92,7 @@ function navigate(element, current) {
                 page[element].style.display = 'block';
                 homeButton.style.display = 'block';
                 currentPage = element;
+                sessionStorage.setItem('currentPage', currentPage);
             }, 1500);
         }
 }
@@ -79,4 +109,15 @@ navMenu.workPage.addEventListener('click', function() {
 });
 navMenu.contactPage.addEventListener('click', function() {
     navigate('contactPage', currentPage);
+});
+
+//Toggle the animation for the name on the home page
+toggleButton.button.addEventListener('click', function() {
+    if (toggleButton.toggled) {
+        toggleButton.toggled = false;
+        toggleButton.button.className = `${toggleButton.default} off`;
+    } else {
+        toggleButton.toggled = true;
+        toggleButton.button.className = `${toggleButton.default} on`;
+    }
 });
