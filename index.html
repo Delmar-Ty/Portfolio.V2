@@ -82,13 +82,16 @@
                 </div>
                 <button type="submit" class="form-submit">Send</button>
             </div>
-            <form action="" class="form">
+            <form action="#" class="form">
                 <div class="form-box">
-                    <input type="text" class="form-input">
+                    <input type="text" class="form-input form-name">
                     <div class="name-placeholder custom-placeholder">Name</div>
-                    <input type="email" class="form-input">
+                    <span class="invalid name-invalid">Who are you?</span>
+                    <input type="email" class="form-input form-email">
                     <div class="email-placeholder custom-placeholder">Email</div>
+                    <span class="invalid email-invalid">How do I reply?</span>
                     <textarea name="msgBox" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    <span class="invalid msg-invalid">Send me a message 😎</span>
                 </div>
             </form>
         </div>
@@ -115,5 +118,6 @@
 
     <!--JavaScript Link-->
     <script src="assets/JavaScript/script.js"></script>
+    <script src="assets/JavaScript/form.js"></script>
 </body>
 </html>

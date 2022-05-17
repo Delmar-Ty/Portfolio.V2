@@ -4,8 +4,10 @@ const homeButton = document.querySelector('.home-button');
 const toggleButton = {
     button: document.querySelector('.arrow-button'),
     toggled: false,
-    default: document.querySelector('.arrow-button').className
+    default: document.querySelector('.arrow-button').className,
+    animating: false
 }
+let animationPlaying = false;
 
 //Creates a way to easily access all the navigation buttons and for convenience has the same names as the page variable
 const navMenu = {
@@ -49,8 +51,12 @@ if (sessionStorage.getItem('currentPage') === null || sessionStorage.getItem('cu
 
 //Triggers the animation used to mask the changing of
 function wipe() {
+    animationPlaying = true;
     wipeDiv.className = 'wipe start-wipe';
-    setTimeout(function() {wipeDiv.className = 'wipe'}, 3000);
+    setTimeout(function() {
+        wipeDiv.className = 'wipe';
+        animationPlaying = false;
+        }, 3000);
 }
 
 //Creates the transitions for the form inputs based on whether the form input is blank or not and positions the placeholder elements accordingly
@@ -99,25 +105,37 @@ function navigate(element, current) {
 
 //Event listener for each navigation button which includes the home button (my name in the corner)
 homeButton.addEventListener('click', function() {
-    navigate('homeButton', currentPage);
+    if (!animationPlaying) {
+        navigate('homeButton', currentPage);
+    }
 });
 navMenu.aboutPage.addEventListener('click', function() {
-    navigate('aboutPage', currentPage);
+    if (!animationPlaying) {
+        navigate('aboutPage', currentPage);
+    }
 });
 navMenu.workPage.addEventListener('click', function() {
-    navigate('workPage', currentPage);
+    if (!animationPlaying) {
+        navigate('workPage', currentPage);
+    }
 });
 navMenu.contactPage.addEventListener('click', function() {
-    navigate('contactPage', currentPage);
+    if (!animationPlaying) {
+        navigate('contactPage', currentPage);
+    }
 });
 
 //Toggle the animation for the name on the home page
 toggleButton.button.addEventListener('click', function() {
-    if (toggleButton.toggled) {
-        toggleButton.toggled = false;
-        toggleButton.button.className = `${toggleButton.default} off`;
-    } else {
-        toggleButton.toggled = true;
-        toggleButton.button.className = `${toggleButton.default} on`;
+    if (!toggleButton.animating) {
+        toggleButton.animating = true;
+        setTimeout(function() {toggleButton.animating = false}, 1000);
+        if (toggleButton.toggled) {
+            toggleButton.toggled = false;
+            toggleButton.button.className = `${toggleButton.default} off`;
+        } else {
+            toggleButton.toggled = true;
+            toggleButton.button.className = `${toggleButton.default} on`;
+        }
     }
 });

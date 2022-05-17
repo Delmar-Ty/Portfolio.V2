@@ -420,12 +420,33 @@ body {
 }
 
 .email-placeholder {
-    top: 35%;
+    top: 33.5%;
     left: 2%;
 }
 
 .form-input:focus + div::after {
     width: 100%;
+}
+
+.invalid {
+    position: absolute;
+    color: red;
+    font-size: 0.9vw;
+    transition: all;
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+.name-invalid {
+    top: 18%;
+}
+
+.email-invalid {
+    top: 42%;
+}
+
+.msg-invalid {
+    top: 50%;
 }
 
 .about-container {
