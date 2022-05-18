@@ -1,3 +1,4 @@
+const smtp = '03cf9286-33fc-4592-a91a-39eff77c0a95';
 const emailReg = /(\w+@)(\w+)([-\.]\w+)?\.(org|net|com)/;
 const nameReg = /([a-zA-Z]+\s*)+/;
 const specialReg = /[\+\*\?\^\$\\\[\]\{\}\(\)\|\/#%!&<>`~_=;:'"@0-9]+/g;
@@ -63,7 +64,22 @@ form.msg.addEventListener('blur', function() {
 
 form.submit.addEventListener('click', function() {
     if (form.valid.nameValid && form.valid.emailValid && form.valid.msgValid) {
-        //Do something here aka send an email
+        //Send the email
+        Email.send({
+            SecureToken : 'b3848527-4f24-459c-ab30-34b216c4b922',
+            To : 'reliablesource13@gmail.com',
+            From : 'dschro206@west-mec.org',
+            Subject : `${form.name.value} is trying to contact you!`,
+            Body : `I am ${form.name.value} and my email is ${form.email.value}
+            
+            ${form.msg.value}`
+        }).then(() => {
+            alert('Email Sent 😊');
+            location.reload();
+        }).catch(err => {
+            alert(err);
+            location.reload();
+        });
     } else {
         //Inform the user of an invalid form
     }
