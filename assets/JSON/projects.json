@@ -78,5 +78,10 @@
         "name": "Canvas Bubbles",
         "github": "https://delmar-ty.github.io/Bubbles/",
         "thumbnail": "../Images/projects/canvas-bubbles.png"
+    },
+    {
+        "name": "CSS Infinity",
+        "github": "https://delmar-ty.github.io/css-infinity-effect/",
+        "thumbnail": "../Images/projects/css-infinity.png"
     }
 ]
