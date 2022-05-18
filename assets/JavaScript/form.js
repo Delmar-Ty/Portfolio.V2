@@ -1,4 +1,3 @@
-const smtp = '03cf9286-33fc-4592-a91a-39eff77c0a95';
 const emailReg = /(\w+@)(\w+)([-\.]\w+)?\.(org|net|com)/;
 const nameReg = /([a-zA-Z]+\s*)+/;
 const specialReg = /[\+\*\?\^\$\\\[\]\{\}\(\)\|\/#%!&<>`~_=;:'"@0-9]+/g;

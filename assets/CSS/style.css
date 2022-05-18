@@ -509,9 +509,8 @@ body {
     color: white;
     font-size: 2vw;
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 15%;
+    left: 2%;
 }
 
 .projects-container {
@@ -526,6 +525,7 @@ body {
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
+    gap: 0;
 }
 
 @media only screen and (max-width: 650px) {
@@ -545,6 +545,14 @@ body {
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    /* background-image: url('../Images/projects/calendar.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
 }
 
 .project-item:hover {
@@ -553,23 +561,40 @@ body {
 }
 
 .project-item::before {
-    content: 'Check Me Out';
+    content: var(--content);
     position: absolute;
     top: -100%;
     left: 50%;
     width: 100%;
     height: 100%;
     transform: translateX(-50%);
-    color: white;
+    color: black;
+    background-color: white;
     transition: all;
     transition-duration: 500ms;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3vw;
+    opacity: 0;
 }
 
 .project-item:hover::before {
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.project-item::after {
+    content: '';
+    background-image: var(--img);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
 }

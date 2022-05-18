@@ -2,71 +2,81 @@
     {
         "name": "FBLA SLC Submission",
         "github": "https://delmar-ty.github.io/FBLA-Competition/",
-        "thumbnail": "assets/Images/projects/fbla-slc-submission.png"
+        "thumbnail": "../Images/projects/fbla-slc-submission.png"
     },
     {
         "name": "Calendar",
         "github": "https://delmar-ty.github.io/Calendar/",
-        "thumbnail": "assets/Images/projects/calendar.png"
+        "thumbnail": "../Images/projects/calendar.png"
     },
     {
         "name": "E-Commerce",
         "github": "https://delmar-ty.github.io/e-business/",
-        "thumbnail": "assets/Images/projects/e-commerce.png"
+        "thumbnail": "../Images/projects/e-commerce.png"
     },
     {
         "name": "Hosting Plans",
         "github": "https://delmar-ty.github.io/JavaScript-Objects-Assignment/",
-        "thumbnail": "assets/Images/projects/hosting-plans.png"
+        "thumbnail": "../Images/projects/hosting-plans.png"
     },
     {
         "name": "Tic-Tac-Toe",
         "github": "https://delmar-ty.github.io/tic-tac-toe/",
-        "thumbnail": "assets/Images/projects/tic-tac-toe.png"
+        "thumbnail": "../Images/projects/tic-tac-toe.png"
     },
     {
         "name": "Calculator",
         "github": "https://delmar-ty.github.io/Calculator3.0/",
-        "thumbnail": "assets/Images/projects/calculator.png"
+        "thumbnail": "../Images/projects/calculator.png"
     },
     {
         "name": "Quiz",
         "github": "https://delmar-ty.github.io/Quiz2.0/",
-        "thumbnail": "assets/Images/projects/quiz.png"
+        "thumbnail": "../Images/projects/quiz.png"
     },
     {
         "name": "Form Validation",
         "github": "https://delmar-ty.github.io/sign-up-form/",
-        "thumbnail": "assets/Images/projects/form-validation.png"
+        "thumbnail": "../Images/projects/form-validation.png"
     },
     {
         "name": "Portrait Transition",
         "github": "https://delmar-ty.github.io/Animation/",
-        "thumbnail": "assets/Images/projects/portrait-transition.png"
+        "thumbnail": "../Images/projects/portrait-transition.png"
     },
     {
         "name": "Button Transition",
         "github": "https://delmar-ty.github.io/Cool-Button/",
-        "thumbnail": "assets/Images/projects/button-transition.png"
+        "thumbnail": "../Images/projects/button-transition.png"
     },
     {
         "name": "JSON",
         "github": "https://delmar-ty.github.io/JSON-Challenge/",
-        "thumbnail": "assets/Images/projects/json.png"
+        "thumbnail": "../Images/projects/json.png"
     },
     {
         "name": "Canvas",
         "github": "https://delmar-ty.github.io/Canvas/",
-        "thumbnail": "assets/Images/projects/canvas.png"
+        "thumbnail": "../Images/projects/canvas.png"
     },
     {
-        "name": "Name",
-        "github": "Link",
-        "thumbnail": "assets/Images/projects/"
+        "name": "Career Tree",
+        "github": "https://delmar-ty.github.io/career-tree-website-fixed/",
+        "thumbnail": "../Images/projects/career-tree.png"
     },
     {
-        "name": "Name",
-        "github": "Link",
-        "thumbnail": "assets/Images/projects/"
+        "name": "SVG",
+        "github": "https://delmar-ty.github.io/SVG/",
+        "thumbnail": "../Images/projects/svg.png"
+    }, 
+    {
+        "name": "Canvas Parallax",
+        "github": "https://delmar-ty.github.io/Parallax-Starfield/",
+        "thumbnail": "../Images/projects/canvas-parallax.png"
+    },
+    {
+        "name": "Canvas Bubbles",
+        "github": "https://delmar-ty.github.io/Bubbles/",
+        "thumbnail": "../Images/projects/canvas-bubbles.png"
     }
 ]
