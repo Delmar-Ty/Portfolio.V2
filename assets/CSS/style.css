@@ -373,6 +373,12 @@ body {
     align-items: flex-start;
 }
 
+.form-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .form-input {
     position: relative;
     background-color: transparent;
@@ -421,7 +427,8 @@ body {
 
 .name-placeholder, .email-placeholder {
     position: absolute;
-    font-size: 0.9vw;
+    left: 2%;
+    font-size: 1rem;
     transition: all;
     transition-duration: 500ms;
     transition-timing-function: ease-out;
@@ -440,16 +447,6 @@ body {
     transition-timing-function: ease-out;
 }
 
-.name-placeholder {
-    top: 9.8%;
-    left: 2%;
-}
-
-.email-placeholder {
-    top: 33.5%;
-    left: 2%;
-}
-
 .form-input:focus + div::after {
     width: 100%;
 }
@@ -457,22 +454,16 @@ body {
 .invalid {
     position: absolute;
     color: red;
-    font-size: 0.9vw;
+    font-size: 1rem;
     transition: all;
     transition-duration: 500ms;
     opacity: 0;
-}
-
-.name-invalid {
-    top: 18%;
-}
-
-.email-invalid {
-    top: 42%;
+    top: 120%;
 }
 
 .msg-invalid {
-    top: 50%;
+    top: -20%;
+    left: 2%;
 }
 
 .about-container {
@@ -627,4 +618,4 @@ body {
     background-size: cover;
     background-position: center center;
     z-index: -1;
-}
+}  
