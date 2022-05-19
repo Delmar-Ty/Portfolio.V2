@@ -73,7 +73,7 @@ form.submit.addEventListener('click', function() {
             
             ${form.msg.value}`
         }).then(() => {
-            alert('Email Sent 😊');
+            alert('Email Sent 😎');
             location.reload();
         }).catch(err => {
             alert(err);
