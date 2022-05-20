@@ -1,13 +1,17 @@
 const wipeDiv = document.querySelector('.wipe');
 const formInputs = document.querySelectorAll('.form-input');
 const homeButton = document.querySelector('.home-button');
-const toggleButton = {
-    button: document.querySelector('.arrow-button'),
-    toggled: false,
-    default: document.querySelector('.arrow-button').className,
-    animating: false
-}
 let animationPlaying = false;
+const titleContent = [
+    ['D', 'e', 'l', 'm', 'a', 'r', ' ', 'S', 'c', 'h', 'r', 'o', 'c', 'k'],
+    ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+];
+let currentPage;
+let title = {
+    element: document.querySelector('.my-name'),
+    which: 0,
+    home: (sessionStorage.currentPage === 'homePage')? true: false
+}
 
 //Creates a way to easily access all the navigation buttons and for convenience has the same names as the page variable
 const navMenu = {
@@ -23,8 +27,6 @@ const page = {
     workPage: document.querySelector('.my-work'),
     contactPage: document.querySelector('.contact-me')
 }
-
-let currentPage;
 
 if (sessionStorage.getItem('currentPage') === null || sessionStorage.getItem('currentPage') === undefined) {
     sessionStorage.setItem('currentPage', 'homePage');
@@ -49,7 +51,7 @@ if (sessionStorage.getItem('currentPage') === null || sessionStorage.getItem('cu
     }
 }
 
-//Triggers the animation used to mask the changing of
+//Triggers the animation used to mask the changing of the pages
 function wipe() {
     animationPlaying = true;
     wipeDiv.className = 'wipe start-wipe';
@@ -83,6 +85,8 @@ formInputs.forEach(function(el) {
 //'current' is the current page that has one of the property names in the 'page' variable
 function navigate(element, current) {
         if (element === 'homeButton') {
+            title.home = true;
+            unType();
             wipe();
             setTimeout(function() {
                 page[current].style.display = 'none';
@@ -93,6 +97,7 @@ function navigate(element, current) {
             }, 1500);
         } else {
             wipe();
+            title.home = false;
             setTimeout(function() {
                 page[current].style.display = 'none';
                 page[element].style.display = 'block';
@@ -125,17 +130,38 @@ navMenu.contactPage.addEventListener('click', function() {
     }
 });
 
-//Toggle the animation for the name on the home page
-toggleButton.button.addEventListener('click', function() {
-    if (!toggleButton.animating) {
-        toggleButton.animating = true;
-        setTimeout(function() {toggleButton.animating = false}, 1000);
-        if (toggleButton.toggled) {
-            toggleButton.toggled = false;
-            toggleButton.button.className = `${toggleButton.default} off`;
-        } else {
-            toggleButton.toggled = true;
-            toggleButton.button.className = `${toggleButton.default} on`;
+function type() {
+    let content = [];
+    let i = titleContent[title.which].length;
+    let j = 0;
+    let delay = setInterval(function() {
+        content.push(titleContent[title.which][j]);
+        title.element.textContent = content.join('');
+        j++;
+        i--;
+        if (i === 0) {
+            clearInterval(delay);
+            setTimeout(unType, 5000);
         }
+    }, 200);
+}
+
+//My Name Typing Animation
+function unType() {
+    if (title.home) {
+        let content = title.element.textContent.split('');
+        let i = content.length;
+        let delay = setInterval(function() {
+            content.pop();
+            title.element.textContent = content.join('');
+            i--;
+            if (i === 0) {
+                (title.which)? title.which = 0: title.which = 1;
+                clearInterval(delay);
+                type();
+            }
+        }, 200);
     }
-});
+}
+
+unType();
