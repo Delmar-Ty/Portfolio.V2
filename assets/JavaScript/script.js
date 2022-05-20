@@ -108,6 +108,9 @@ function navigate(element, current) {
         }
 }
 
+title.home = (sessionStorage.currentPage === 'homePage')? true: false;
+console.log(title.home, sessionStorage.currentPage);
+
 //Event listener for each navigation button which includes the home button (my name in the corner)
 homeButton.addEventListener('click', function() {
     if (!animationPlaying) {
