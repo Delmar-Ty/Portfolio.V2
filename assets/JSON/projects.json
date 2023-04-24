@@ -83,5 +83,25 @@
         "name": "CSS Infinity",
         "github": "https://delmar-ty.github.io/css-infinity-effect/",
         "thumbnail": "../Images/projects/css-infinity.png"
+    },
+    {
+        "name": "Sine Wave",
+        "github": "https://delmar-ty.github.io/sine-wave/",
+        "thumbnail": "../Images/projects/sine-wave.png"
+    },
+    {
+        "name": "Tech Sounding Quotes",
+        "github": "https://voluble-blini-eb695b.netlify.app/",
+        "thumbnail": "../Images/projects/techy-quotes.png"
+    },
+    { 
+        "name": "Weather API",
+        "github": "https://loquacious-strudel-266add.netlify.app/",
+        "thumbnail": "../Images/projects/weather-api.png"
+    },
+    {
+        "name": "User Management",
+        "github": "https://github.com/Delmar-Ty/user_management.git",
+        "thumbnail": "../Images/projects/user-management.png"
     }
 ]

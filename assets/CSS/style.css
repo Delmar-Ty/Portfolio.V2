@@ -443,7 +443,6 @@ body {
 
 .msg-invalid {
     top: -20%;
-    left: 2%;
     width: max-content;
 }
 
@@ -536,13 +535,14 @@ body {
 .skills {
     position: relative;
     display: flex;
-    width: 50%;
+    width: 75%;
     justify-content: space-around;
     align-items: center;
 }
 
-.js, .html, .css, .bootstrap, .json {
+.js, .html, .css, .bootstrap, .json, .react, .sass, .mongo, .php, .node, .sqlite {
     width: 3rem;
+    height: 3rem;
     position: relative;
 }
 
@@ -567,6 +567,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0;
+    overflow: auto;
 }
 
 .project-item {
