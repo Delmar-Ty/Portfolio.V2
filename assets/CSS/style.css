@@ -540,7 +540,7 @@ body {
     align-items: center;
 }
 
-.js, .html, .css, .bootstrap, .json, .react, .sass, .mongo, .php, .node, .sqlite {
+.js, .html, .css, .bootstrap, .json, .react, .sass, .mongo, .php, .node, .mysql {
     width: 3rem;
     height: 3rem;
     position: relative;

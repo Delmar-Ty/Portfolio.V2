@@ -103,5 +103,20 @@
         "name": "User Management",
         "github": "https://github.com/Delmar-Ty/user_management.git",
         "thumbnail": "../Images/projects/user-management.png"
+    },
+    {
+        "name": "PHP CRUD",
+        "github": "http://phpcrud.great-site.net/login.php",
+        "thumbnail": "../Images/projects/php-crud.png"
+    },
+    {
+        "name": "Jokes API",
+        "github": "https://dulcet-pie-cd531c.netlify.app/",
+        "thumbnail": "../Images/projects/jokes-api.png"
+    },
+    {
+        "name": "OMDB API",
+        "github": "https://github.com/Delmar-Ty/omdb_api.git",
+        "thumbnail": "../Images/projects/omdb-api.png"
     }
 ]

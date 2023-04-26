@@ -28,7 +28,7 @@ function update() {
     let elements = [];
     for (const index in data) {
         let html = `
-            <a href="${data[index].github}" class="project-item" style="--img: url(${data[index].thumbnail}); --content: '${data[index].name}';" target="_blank"></a>
+            <a href="${data[index].github}" class="project-item" style="--img: url(${data[index].thumbnail}); --content: '${data[index].name}';" target="_blank" data-id="${index}" onmouseover="thing(this)"></a>
         `;
         elements.push(html);
     }
@@ -55,3 +55,8 @@ function initData() {
 }
 
 initData();
+
+//Function to display message when a project is hoevered over
+function thing(element) {
+    console.log(element.getAttribute('data-id'));
+}
