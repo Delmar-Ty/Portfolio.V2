@@ -2,6 +2,7 @@ const projects = 'assets/JSON/projects.json';
 const storageName = 'projects';
 let dataExists = (sessionStorage[storageName])? true: false;
 let evnt = new Event('init');
+const des = document.querySelector('#description-text');
 
 
 //Function to fetch json data
@@ -58,5 +59,8 @@ initData();
 
 //Function to display message when a project is hoevered over
 function thing(element) {
-    console.log(element.getAttribute('data-id'));
+    // console.log(element.getAttribute('data-id'));
+    let data = JSON.parse(sessionStorage[storageName]);
+    // console.log(data[element.getAttribute('data-id')].description);
+    des.innerHTML = data[element.getAttribute('data-id')].description;
 }

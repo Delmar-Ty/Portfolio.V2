@@ -649,3 +649,41 @@ body {
         font-size: 1.5rem;
     }
 }
+
+#description {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 15%;
+    height: 75%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description::before {
+    content: 'Description';
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+#description-text {
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -2,121 +2,145 @@
     {
         "name": "FBLA SLC Submission",
         "github": "https://delmar-ty.github.io/FBLA-Competition/",
-        "thumbnail": "../Images/projects/fbla-slc-submission.png"
+        "thumbnail": "../Images/projects/fbla-slc-submission.png",
+        "description": "FBLA State Leadership Conference competition submission. A site for tourists to look search for popular attractions and can search for them based off of 5 different filters. Created with HTML5, CSS3, Javascript, Bootstrap 5, JSON and SMTP JS"
     },
     {
         "name": "Calendar",
         "github": "https://delmar-ty.github.io/Calendar/",
-        "thumbnail": "../Images/projects/calendar.png"
+        "thumbnail": "../Images/projects/calendar.png",
+        "description": "Calendar app created with vanilla Javascript and highlights the current date"
     },
     {
         "name": "E-Commerce",
         "github": "https://delmar-ty.github.io/e-business/",
-        "thumbnail": "../Images/projects/e-commerce.png"
+        "thumbnail": "../Images/projects/e-commerce.png",
+        "description": "E-Commerce sample website using Bootstrap 5 and Javascript to create a dynamic E-Commerce template"
     },
     {
         "name": "Hosting Plans",
         "github": "https://delmar-ty.github.io/JavaScript-Objects-Assignment/",
-        "thumbnail": "../Images/projects/hosting-plans.png"
+        "thumbnail": "../Images/projects/hosting-plans.png",
+        "description": "A project to calculate total cost for a selected plan using Bootstrap 5"
     },
     {
         "name": "Tic-Tac-Toe",
         "github": "https://delmar-ty.github.io/tic-tac-toe/",
-        "thumbnail": "../Images/projects/tic-tac-toe.png"
+        "thumbnail": "../Images/projects/tic-tac-toe.png",
+        "description": "Simple tic-tac-toe game created with vanilla Javascript"
     },
     {
         "name": "Calculator",
         "github": "https://delmar-ty.github.io/Calculator3.0/",
-        "thumbnail": "../Images/projects/calculator.png"
+        "thumbnail": "../Images/projects/calculator.png",
+        "description": "A simple fully functional calculator with common mathmatical operation created with vanilla Javascript"
     },
     {
         "name": "Quiz",
         "github": "https://delmar-ty.github.io/Quiz2.0/",
-        "thumbnail": "../Images/projects/quiz.png"
+        "thumbnail": "../Images/projects/quiz.png",
+        "description": "A simple quiz to practice form submission and validation"
     },
     {
         "name": "Form Validation",
         "github": "https://delmar-ty.github.io/sign-up-form/",
-        "thumbnail": "../Images/projects/form-validation.png"
+        "thumbnail": "../Images/projects/form-validation.png",
+        "description": "Using RegEx to perform custom form validation"
     },
     {
         "name": "Portrait Transition",
         "github": "https://delmar-ty.github.io/Animation/",
-        "thumbnail": "../Images/projects/portrait-transition.png"
+        "thumbnail": "../Images/projects/portrait-transition.png",
+        "description": "Practice CSS3 transitions and animations"
     },
     {
         "name": "Button Transition",
         "github": "https://delmar-ty.github.io/Cool-Button/",
-        "thumbnail": "../Images/projects/button-transition.png"
+        "thumbnail": "../Images/projects/button-transition.png",
+        "description": "Prace CSS3 transitions and animations"
     },
     {
         "name": "JSON",
         "github": "https://delmar-ty.github.io/JSON-Challenge/",
-        "thumbnail": "../Images/projects/json.png"
+        "thumbnail": "../Images/projects/json.png",
+        "description": "Practice for FBLA SLC competition submission"
     },
     {
         "name": "Canvas",
         "github": "https://delmar-ty.github.io/Canvas/",
-        "thumbnail": "../Images/projects/canvas.png"
+        "thumbnail": "../Images/projects/canvas.png",
+        "description": "Canvas drawing practice, the drawing is fully relative to a few starting parameters and will scale and move with the position"
     },
     {
         "name": "Career Tree",
         "github": "https://delmar-ty.github.io/career-tree-website-fixed/",
-        "thumbnail": "../Images/projects/career-tree.png"
+        "thumbnail": "../Images/projects/career-tree.png",
+        "description": "Made a website based off of which career chosen from a career tree"
     },
     {
         "name": "SVG",
         "github": "https://delmar-ty.github.io/SVG/",
-        "thumbnail": "../Images/projects/svg.png"
+        "thumbnail": "../Images/projects/svg.png",
+        "description": "SVG drawing to practice the basics of SVG"
     }, 
     {
         "name": "Canvas Parallax",
         "github": "https://delmar-ty.github.io/Parallax-Starfield/",
-        "thumbnail": "../Images/projects/canvas-parallax.png"
+        "thumbnail": "../Images/projects/canvas-parallax.png",
+        "description": "Canvas project with a parallax effect when the mouse is moved"
     },
     {
         "name": "Canvas Bubbles",
         "github": "https://delmar-ty.github.io/Bubbles/",
-        "thumbnail": "../Images/projects/canvas-bubbles.png"
+        "thumbnail": "../Images/projects/canvas-bubbles.png",
+        "description": "Canvas project to spawn in bubbles that are animated using canvas and bounce of the walls changing colors and popping after a certain amount of time"
     },
     {
         "name": "CSS Infinity",
         "github": "https://delmar-ty.github.io/css-infinity-effect/",
-        "thumbnail": "../Images/projects/css-infinity.png"
+        "thumbnail": "../Images/projects/css-infinity.png",
+        "description": "CSS animation effect"
     },
     {
         "name": "Sine Wave",
         "github": "https://delmar-ty.github.io/sine-wave/",
-        "thumbnail": "../Images/projects/sine-wave.png"
+        "thumbnail": "../Images/projects/sine-wave.png",
+        "description": "Sine wave animation using canvas"
     },
     {
         "name": "Tech Sounding Quotes",
         "github": "https://voluble-blini-eb695b.netlify.app/",
-        "thumbnail": "../Images/projects/techy-quotes.png"
+        "thumbnail": "../Images/projects/techy-quotes.png",
+        "description": "Website that provides quote that sound techy but actually aren't using a free API created in React JS"
     },
     { 
         "name": "Weather API",
         "github": "https://loquacious-strudel-266add.netlify.app/",
-        "thumbnail": "../Images/projects/weather-api.png"
+        "thumbnail": "../Images/projects/weather-api.png",
+        "description": "Website created using React JS to search for a specific locations weather data using a weather API"
     },
     {
         "name": "User Management",
         "github": "https://github.com/Delmar-Ty/user_management.git",
-        "thumbnail": "../Images/projects/user-management.png"
+        "thumbnail": "../Images/projects/user-management.png",
+        "description": "A way to create an account, login to said account then be able to update the information. There's also an admin page where you can search for a specific user and delete them from the data base. Created in Node.js using Express js and MongoDB"
     },
     {
         "name": "PHP CRUD",
         "github": "http://phpcrud.great-site.net/login.php",
-        "thumbnail": "../Images/projects/php-crud.png"
+        "thumbnail": "../Images/projects/php-crud.png",
+        "description": "PHP project using the CRUD (Create, Read, Update, Delete) functions to manipulate a MySQL database"
     },
     {
         "name": "Jokes API",
         "github": "https://dulcet-pie-cd531c.netlify.app/",
-        "thumbnail": "../Images/projects/jokes-api.png"
+        "thumbnail": "../Images/projects/jokes-api.png",
+        "description": "Website created with React JS that uses a free API to retrieve a random joke at the press of a button"
     },
     {
         "name": "OMDB API",
         "github": "https://github.com/Delmar-Ty/omdb_api.git",
-        "thumbnail": "../Images/projects/omdb-api.png"
+        "thumbnail": "../Images/projects/omdb-api.png",
+        "description": "React JS website using a movie database API to search and display information about the movies searched"
     }
 ]
