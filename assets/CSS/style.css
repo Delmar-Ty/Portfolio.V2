@@ -687,3 +687,9 @@ body {
     align-items: center;
     text-align: center;
 }
+
+#canvas {
+    position: absolute;
+    z-index: -1;
+    background-color: transparent;
+}
