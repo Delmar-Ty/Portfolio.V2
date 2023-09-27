@@ -66,8 +66,8 @@ form.submit.addEventListener('click', function() {
         //Send the email
         Email.send({
             SecureToken : 'b3848527-4f24-459c-ab30-34b216c4b922',
-            To : 'reliablesource13@gmail.com',
-            From : 'dschro206@west-mec.org',
+            To : 'delmarschrockwork@gmail.com',
+            From : 'reliablesource13@gmail.com',
             Subject : `${form.name.value} is trying to contact you!`,
             Body : `I am ${form.name.value} and my email is ${form.email.value}
             
