@@ -130,5 +130,11 @@
         "github": "https://github.com/Delmar-Ty/omdb_api.git",
         "thumbnail": "../Images/projects/omdb-api.png",
         "description": "React JS website using a movie database API to search and display information about the movies searched"
+    },
+    {
+        "name": "AZ Plumbing",
+        "github": "https://definitelytotallynotsam.github.io/FBLA-Platinum-Plumbing/index.html",
+        "thumbnail": "../Images/projects/platinum-plumbing.png",
+        "description": "Plumbing service template created by me and 2 other students at West-MEC for a project"
     }
 ]
