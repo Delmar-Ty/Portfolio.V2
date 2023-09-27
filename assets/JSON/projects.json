@@ -12,12 +12,6 @@
         "description": "Calendar app created with vanilla Javascript and highlights the current date"
     },
     {
-        "name": "E-Commerce",
-        "github": "https://delmar-ty.github.io/e-business/",
-        "thumbnail": "../Images/projects/e-commerce.png",
-        "description": "E-Commerce sample website using Bootstrap 5 and Javascript to create a dynamic E-Commerce template"
-    },
-    {
         "name": "Hosting Plans",
         "github": "https://delmar-ty.github.io/JavaScript-Objects-Assignment/",
         "thumbnail": "../Images/projects/hosting-plans.png",
@@ -94,12 +88,6 @@
         "github": "https://delmar-ty.github.io/Bubbles/",
         "thumbnail": "../Images/projects/canvas-bubbles.png",
         "description": "Canvas project to spawn in bubbles that are animated using canvas and bounce of the walls changing colors and popping after a certain amount of time"
-    },
-    {
-        "name": "CSS Infinity",
-        "github": "https://delmar-ty.github.io/css-infinity-effect/",
-        "thumbnail": "../Images/projects/css-infinity.png",
-        "description": "CSS animation effect"
     },
     {
         "name": "Sine Wave",
